@@ -1,5 +1,5 @@
-import { Calculator } from './calculator.js';
-import { Store } from './storage.js';
+import { Calculator } from './Calculator.js';
+import { Store } from './Storage.js';
 
 const result1 = Calculator.getInstance().sum(1, 2);
 Store.getInstance().add(result1);
