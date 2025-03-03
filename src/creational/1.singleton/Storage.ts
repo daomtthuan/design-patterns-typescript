@@ -1,5 +1,7 @@
 // Lazy Initialization Singleton
 
+import colors from 'picocolors';
+
 /** Store. */
 export class Store {
   private static instance: Store;
@@ -8,7 +10,7 @@ export class Store {
 
   /** @inheritdoc */
   private constructor() {
-    console.log('Store instance created');
+    console.log(colors.gray('Store instance created'));
   }
 
   /**
@@ -17,14 +19,14 @@ export class Store {
    * @param value Value to add.
    */
   public add(value: number): void {
-    console.log('Add value:', value);
+    console.log('Add value:', value, '\n');
     this.values.push(value);
   }
 
   /** @returns Store instance. */
   public static getInstance(): Store {
     if (!Store.instance) {
-      console.log('Store creating...');
+      console.log(colors.gray('Store creating...'));
       Store.instance = new Store();
     }
 

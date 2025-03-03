@@ -1,3 +1,5 @@
+import colors from 'picocolors';
+
 // Eager Initialization Singleton
 
 /** Calculator. */
@@ -6,7 +8,7 @@ export class Calculator {
 
   /** @inheritdoc */
   private constructor() {
-    console.log('Calculator instance created');
+    console.log(colors.gray('Calculator instance created'));
   }
 
   /**
