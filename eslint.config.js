@@ -80,6 +80,7 @@ const config = tseslint.config(
     ...jsdoc.configs['flat/recommended-typescript'],
   },
   {
+    plugins: { jsdoc },
     rules: {
       'jsdoc/require-jsdoc': [
         'warn',
