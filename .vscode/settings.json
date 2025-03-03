@@ -1,0 +1,158 @@
+{
+  "catppuccin.accentColor": "sapphire",
+  "catppuccin.colorOverrides": {
+    "mocha": {
+      "base": "#11111b",
+      "blue": "#89b4fa",
+      "crust": "#1e1e2e",
+      "flamingo": "#f2cdcd",
+      "green": "#a6e3a1",
+      "lavender": "#b4befe",
+      "mantle": "#181825",
+      "maroon": "#eba0ac",
+      "mauve": "#cba6f7",
+      "overlay0": "#6c7086",
+      "overlay1": "#7f849c",
+      "overlay2": "#9399b2",
+      "peach": "#fab387",
+      "pink": "#f5c2e7",
+      "red": "#f38ba8",
+      "rosewater": "#f5e0dc",
+      "sapphire": "#74c7ec",
+      "sky": "#89dceb",
+      "subtext0": "#a6adc8",
+      "subtext1": "#bac2de",
+      "surface0": "#313244",
+      "surface1": "#45475a",
+      "surface2": "#585b70",
+      "teal": "#94e2d5",
+      "text": "#cdd6f4",
+      "yellow": "#f9e2af"
+    }
+  },
+  "catppuccin.workbenchMode": "flat",
+  "codeium.enableConfig": {
+    "*": true,
+    "ignore": true
+  },
+  "codemetrics.basics.CodeLensHiddenUnder": 0,
+  "codemetrics.basics.ComplexityTemplate": "Complexity: {0}",
+  "codemetrics.basics.DecorationModeEnabled": false,
+  "cSpell.caseSensitive": true,
+  "cSpell.words": ["creational", "ThuanDMT"],
+  "dotenv.cloakIcon": "*",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "CartographCF Nerd Font, Cartograph CF, Cascadia Code NF, Cascadia Code PL, Source Code Pro, Consolas, Courier New, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13.5,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.lineHeight": 1.6,
+  "editor.rulers": [160],
+  "editor.stickyScroll.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*": "${capture}.map",
+    "*.js": "${capture}.js.map, ${capture}.cjs, ${capture}.mjs, ${capture}.*.map, ${capture}.d.ts",
+    "*.ts": "${capture}.*.ts",
+    "*.tsx": "${capture}.*.ts",
+    "package.json": ".*, pnpm-*.yaml, tsconfig.*, vite.config.*, prettier.config.*, eslint.config.*, swc.config.*, rollup.config.*"
+  },
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/dist/**": true,
+    "**/node_modules": true,
+    "**/pnpm-lock.yaml": true,
+    "**/Thumbs.db": true
+  },
+  "files.readonlyInclude": {
+    "**/dist/**": true,
+    "**/node_modules/**": true
+  },
+  "git.autofetch": true,
+  "git.blame.editorDecoration.enabled": true,
+  "jest.runMode": "on-demand",
+  "material-icon-theme.folders.theme": "classic",
+  "sort-json.settings.sortMode": "Objects Only",
+  "terminal.integrated.cursorStyle": "line",
+  "tsImportSorter.configuration.groupRules": [
+    // # Others
+    {
+      "flags ": ""
+    },
+    // # Dependencies
+    {
+      "flags": "scripts",
+      "regex": "^(?!(~|\\.))",
+      "subGroups": ["^@", "^[^@]", "^react"]
+    },
+    {
+      "importType": true,
+      "regex": "^(?!(~|\\.))",
+      "subGroups": ["^@", "^[^@]", "^react"]
+    },
+    {
+      "regex": "^(?!(~|\\.))",
+      "subGroups": ["^@", "^[^@]", "^react"]
+    },
+    // # Modules
+    {
+      "flags": "scripts",
+      "regex": "^(?=(~))"
+    },
+    {
+      "importType": true,
+      "regex": "^(?=(~))"
+    },
+    {
+      "regex": "^(?=(~))"
+    },
+    // # Relative
+    {
+      "flags": "scripts",
+      "regex": "^(?=(\\.))"
+    },
+    {
+      "importType": true,
+      "regex": "^(?=(\\.))"
+    },
+    {
+      "regex": "^(?=(\\.))"
+    }
+  ],
+  "tsImportSorter.configuration.wrappingStyle": "prettier",
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false
+}

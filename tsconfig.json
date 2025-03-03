@@ -1,0 +1,84 @@
+{
+  "compilerOptions": {
+    // Project
+    "composite": true,
+    "incremental": true,
+
+    // Language and Environment
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "useDefineForClassFields": true,
+    "moduleDetection": "force",
+
+    // Module Resolution
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowArbitraryExtensions": false,
+    "allowImportingTsExtensions": false,
+    "allowUmdGlobalAccess": false,
+    "noResolve": false,
+    "noUncheckedSideEffectImports": false,
+    "resolveJsonModule": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+
+    // Emit
+    "noEmit": true,
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "emitBOM": false,
+    "emitDeclarationOnly": false,
+    "importHelpers": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "stripInternal": true,
+    "newLine": "lf",
+
+    // JavaScript Support
+    "allowJs": true,
+    "checkJs": true,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+
+    // Type Checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictBuiltinIteratorReturn": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+
+    // Completeness
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}
