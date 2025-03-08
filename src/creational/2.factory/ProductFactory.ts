@@ -1,10 +1,10 @@
-import type { IProduct } from './IProduct.js';
+import type { IProduct } from './products/IProduct.js';
 
-import { FreeProduct } from './FreeProduct.js';
-import { PricedProduct } from './PricedProduct.js';
+import { FreeProduct } from './products/FreeProduct.js';
+import { PricedProduct } from './products/PricedProduct.js';
 
-/** Factory. */
-export class Factory {
+/** Product Factory. */
+export class ProductFactory {
   /**
    * Create product.
    *
@@ -13,7 +13,7 @@ export class Factory {
    *
    * @returns Product.
    */
-  public createProduct(name: string, price: number): IProduct {
+  public create(name: string, price: number): IProduct {
     console.log('Create product with:', { name, price });
 
     if (price === 0) {
