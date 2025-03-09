@@ -1,5 +1,5 @@
-import { Car } from './products/Car.js';
-import { Engine } from './products/Engine.js';
+import { Car } from './objects/Car.js';
+import { Engine } from './objects/Engine.js';
 
 const carPrototype = new Car('Car Prototype', new Engine(0, 0));
 console.log('Prototype', carPrototype);
