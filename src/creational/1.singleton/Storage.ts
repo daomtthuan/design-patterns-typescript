@@ -19,7 +19,7 @@ export class Store {
    * @param value Value to add.
    */
   public add(value: number): void {
-    console.log('Add value:', value, '\n');
+    console.log('Add value:', value);
     this.values.push(value);
   }
 
