@@ -1,7 +1,7 @@
-import type { IVehicle } from '../products/IVehicle.js';
+import type { IVehicle } from '../objects/IVehicle.js';
 import type { IVehicleFactory } from './IVehicleFactory.js';
 
-import { Car } from '../products/Car.js';
+import { Car } from '../objects/Car.js';
 
 /** Car factory. */
 export class CarFactory implements IVehicleFactory {
