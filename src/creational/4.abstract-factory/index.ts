@@ -4,17 +4,26 @@ import { MotorcycleFactory } from './factories/MotorcycleFactory.js';
 const carFactory = new CarFactory();
 
 const car1 = carFactory.createElectricVehicle('Car 1');
-console.log(car1, '\n');
+car1.charge();
+console.log(car1);
+
+console.log();
 
 const car2 = carFactory.createGasolineVehicle('Car 2');
-console.log(car2, '\n');
+car2.refuel();
+console.log(car2);
 
+console.log();
 // --------------------------
 
 const motorcycleFactory = new MotorcycleFactory();
 
 const motorcycle1 = motorcycleFactory.createElectricVehicle('Motorcycle 1');
-console.log(motorcycle1, '\n');
+motorcycle1.charge();
+console.log(motorcycle1);
+
+console.log();
 
 const motorcycle2 = motorcycleFactory.createGasolineVehicle('Motorcycle 2');
-console.log(motorcycle2, '\n');
+motorcycle2.refuel();
+console.log(motorcycle2);

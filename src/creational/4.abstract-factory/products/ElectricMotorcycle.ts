@@ -11,6 +11,6 @@ export class ElectricMotorcycle implements IElectricVehicle {
 
   /** @inheritdoc */
   public charge(): void {
-    console.log(colors.gray('ElectricMotorcycle charged'));
+    console.log('ElectricMotorcycle charged');
   }
 }

@@ -11,6 +11,6 @@ export class GasolineCar implements IGasolineVehicle {
 
   /** @inheritdoc */
   public refuel(): void {
-    console.log(colors.gray('GasolineCar refueled'));
+    console.log('GasolineCar refueled');
   }
 }
