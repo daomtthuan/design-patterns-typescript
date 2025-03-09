@@ -10,6 +10,6 @@ export class Car implements IVehicle {
     public maxSpeed: number,
     public price: number,
   ) {
-    console.log(colors.gray('Car instance created'));
+    console.log(colors.gray(`Car ${this.name} instance created`));
   }
 }
