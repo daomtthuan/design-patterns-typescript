@@ -6,10 +6,12 @@ import colors from 'picocolors';
 export class Store {
   private static instance: Store;
 
-  private values: number[] = [];
+  private values: number[];
 
   /** @inheritdoc */
   private constructor() {
+    this.values = [];
+
     console.log(colors.gray('Store instance created'));
   }
 
