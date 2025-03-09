@@ -9,6 +9,6 @@ export class FreeProduct implements IProduct {
     public name: string,
     public price: number,
   ) {
-    console.log(colors.gray('FreeProduct instance created'));
+    console.log(colors.gray(`FreeProduct ${this.name} instance created`));
   }
 }

@@ -9,6 +9,6 @@ export class PricedProduct implements IProduct {
     public name: string,
     public price: number,
   ) {
-    console.log(colors.gray('PricedProduct instance created'));
+    console.log(colors.gray(`PricedProduct ${this.name} instance created`));
   }
 }
