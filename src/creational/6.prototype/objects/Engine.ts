@@ -1,3 +1,5 @@
+import colors from 'picocolors';
+
 /** Engine. */
 export class Engine {
   /** @inheritdoc */
@@ -7,5 +9,7 @@ export class Engine {
 
     /** Engine max speed. */
     public maxSpeed: number,
-  ) {}
+  ) {
+    console.log(colors.gray('Engine instance created'));
+  }
 }
