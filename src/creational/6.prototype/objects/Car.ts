@@ -13,7 +13,9 @@ export class Car implements ICarPrototype {
 
     /** Engine. */
     public engine: Engine,
-  ) {}
+  ) {
+    console.log(colors.gray(`Car ${this.name} instance created`));
+  }
 
   /** Run the car. */
   public run(): void {
@@ -28,7 +30,7 @@ export class Car implements ICarPrototype {
   public clone(): Car {
     const car = new Car(this.name, new Engine(this.engine.power, this.engine.maxSpeed));
 
-    console.log(colors.gray('Car cloned'));
+    console.log(colors.gray('Car cloned'), car);
 
     return car;
   }
