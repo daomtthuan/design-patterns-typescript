@@ -12,7 +12,7 @@ export class Car {
     /** Engine. */
     private engine: Engine,
   ) {
-    console.log(colors.gray('Car instance created'));
+    console.log(colors.gray(`Car ${this.name} instance created`));
   }
 
   /** Run the car. */

@@ -20,7 +20,7 @@ export class CarBuilder implements ICarBuilder {
   public setName(name: string): this {
     this.carName = name;
 
-    console.log(colors.gray('Car name set'));
+    console.log(colors.gray(`Set car name to ${this.carName}`));
 
     return this;
   }
@@ -29,7 +29,7 @@ export class CarBuilder implements ICarBuilder {
   public setEngine(): this {
     this.carEngine = new Engine(100, 300);
 
-    console.log(colors.gray('Car engine set'));
+    console.log(colors.gray(`Set car engine to`), this.carEngine);
 
     return this;
   }
