@@ -1,3 +1,5 @@
+import colors from 'picocolors';
+
 import type { IProduct } from '../objects/IProduct.js';
 
 import { FreeProduct } from '../objects/FreeProduct.js';
@@ -5,6 +7,11 @@ import { PricedProduct } from '../objects/PricedProduct.js';
 
 /** Product Factory. */
 export class ProductFactory {
+  /** @inheritdoc */
+  private constructor() {
+    console.log(colors.gray('ProductFactory instance created'));
+  }
+
   /**
    * Create product.
    *
