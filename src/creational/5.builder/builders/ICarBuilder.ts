@@ -1,5 +1,5 @@
-import type { Car } from '../products/Car.js';
-import type { Engine } from '../products/Engine.js';
+import type { Car } from '../objects/Car.js';
+import type { Engine } from '../objects/Engine.js';
 
 /** Car builder interface. */
 export interface ICarBuilder {

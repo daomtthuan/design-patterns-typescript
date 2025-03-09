@@ -2,8 +2,8 @@ import colors from 'picocolors';
 
 import type { ICarBuilder } from './ICarBuilder.js';
 
-import { Car } from '../products/Car.js';
-import { Engine } from '../products/Engine.js';
+import { Car } from '../objects/Car.js';
+import { Engine } from '../objects/Engine.js';
 
 /** Car builder. */
 export class CarBuilder implements ICarBuilder {
