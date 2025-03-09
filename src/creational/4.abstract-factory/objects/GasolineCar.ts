@@ -6,7 +6,7 @@ import type { IGasolineVehicle } from './IGasolineVehicle.js';
 export class GasolineCar implements IGasolineVehicle {
   /** @inheritdoc */
   public constructor(public name: string) {
-    console.log(colors.gray('GasolineCar instance created'));
+    console.log(colors.gray(`GasolineCar ${this.name} instance created`));
   }
 
   /** @inheritdoc */

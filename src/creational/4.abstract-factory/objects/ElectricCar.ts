@@ -6,7 +6,7 @@ import type { IElectricVehicle } from './IElectricVehicle.js';
 export class ElectricCar implements IElectricVehicle {
   /** @inheritdoc */
   public constructor(public name: string) {
-    console.log(colors.gray('ElectricCar instance created'));
+    console.log(colors.gray(`ElectricCar ${this.name} instance created`));
   }
 
   /** @inheritdoc */
