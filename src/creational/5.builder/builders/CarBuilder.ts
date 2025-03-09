@@ -14,6 +14,8 @@ export class CarBuilder implements ICarBuilder {
   public constructor() {
     this.carName = 'Unnamed Car';
     this.carEngine = new Engine(0, 0);
+
+    console.log(colors.gray('CarBuilder instance created'));
   }
 
   /** @inheritdoc */
