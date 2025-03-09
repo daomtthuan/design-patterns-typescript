@@ -1,9 +1,9 @@
-import type { IElectricVehicle } from '../products/IElectricVehicle.js';
-import type { IGasolineVehicle } from '../products/IGasolineVehicle.js';
+import type { IElectricVehicle } from '../objects/IElectricVehicle.js';
+import type { IGasolineVehicle } from '../objects/IGasolineVehicle.js';
 import type { IVehicleFactory } from './IVehicleFactory.js';
 
-import { ElectricCar } from '../products/ElectricCar.js';
-import { GasolineCar } from '../products/GasolineCar.js';
+import { ElectricCar } from '../objects/ElectricCar.js';
+import { GasolineCar } from '../objects/GasolineCar.js';
 
 /** Car factory. */
 export class CarFactory implements IVehicleFactory {
