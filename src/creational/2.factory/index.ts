@@ -1,4 +1,4 @@
-import { ProductFactory } from './ProductFactory.js';
+import { ProductFactory } from './factories/ProductFactory.js';
 
 const factory = new ProductFactory();
 

@@ -1,7 +1,7 @@
-import type { IProduct } from './products/IProduct.js';
+import type { IProduct } from '../objects/IProduct.js';
 
-import { FreeProduct } from './products/FreeProduct.js';
-import { PricedProduct } from './products/PricedProduct.js';
+import { FreeProduct } from '../objects/FreeProduct.js';
+import { PricedProduct } from '../objects/PricedProduct.js';
 
 /** Product Factory. */
 export class ProductFactory {
