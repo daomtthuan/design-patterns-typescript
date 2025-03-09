@@ -1,5 +1,3 @@
-// Lazy Initialization Singleton
-
 import colors from 'picocolors';
 
 /** Store. */

@@ -1,7 +1,5 @@
 import colors from 'picocolors';
 
-// Eager Initialization Singleton
-
 /** Calculator. */
 export class Calculator {
   private static instance: Calculator = new Calculator();
