@@ -28,4 +28,5 @@ if (!entryPath) {
   throw new Error('Design pattern not found');
 }
 
+console.clear();
 await import(url.pathToFileURL(entryPath).href);
