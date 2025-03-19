@@ -1,6 +1,6 @@
 import colors from 'picocolors';
 
-import type { IWaiterPool } from './IWaiterPool.js';
+import type { IWaiterPool } from './abstracts/IWaiterPool.js';
 
 import { Waiter } from '../objects/Waiter.js';
 

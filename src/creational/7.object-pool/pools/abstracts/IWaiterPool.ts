@@ -1,4 +1,4 @@
-import type { Waiter } from '../objects/Waiter.js';
+import type { Waiter } from '../../objects/Waiter.js';
 
 /** Waiter pool interface. */
 export interface IWaiterPool {
