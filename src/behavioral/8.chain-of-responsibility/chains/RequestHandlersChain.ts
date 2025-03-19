@@ -3,13 +3,11 @@ import type { Request } from '../objects/Request.js';
 
 /** Request handlers chain. */
 export class RequestHandlersChain {
-  /** Handlers. */
-  private handlers: RequestHandler[];
+  /** First Handler. */
+  private firstHandler?: RequestHandler;
 
-  /** @inheritdoc */
-  public constructor() {
-    this.handlers = [];
-  }
+  /** Last Handler. */
+  private lastHandler?: RequestHandler;
 
   /**
    * Register handler.
@@ -17,12 +15,15 @@ export class RequestHandlersChain {
    * @param handler Handler.
    */
   public register(handler: RequestHandler): void {
-    const lastHandler = this.handlers[this.handlers.length - 1];
-    if (lastHandler) {
-      lastHandler.next = handler;
+    if (!this.firstHandler) {
+      this.firstHandler = handler;
     }
 
-    this.handlers.push(handler);
+    if (this.lastHandler) {
+      this.lastHandler.next = handler;
+    }
+
+    this.lastHandler = handler;
   }
 
   /**
@@ -33,6 +34,6 @@ export class RequestHandlersChain {
   public handle(request: Request): void {
     console.log('Handle request', request);
 
-    this.handlers[0]?.handle(request);
+    this.firstHandler?.handle(request);
   }
 }
