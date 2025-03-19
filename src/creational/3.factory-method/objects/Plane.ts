@@ -1,6 +1,6 @@
 import colors from 'picocolors';
 
-import type { IVehicle } from './IVehicle.js';
+import type { IVehicle } from './abstracts/IVehicle.js';
 
 /** Plane. */
 export class Plane implements IVehicle {

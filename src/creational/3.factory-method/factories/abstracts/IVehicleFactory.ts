@@ -1,4 +1,4 @@
-import type { IVehicle } from '../objects/IVehicle.js';
+import type { IVehicle } from '../../objects/abstracts/IVehicle.js';
 
 /** Vehicle factory interface. */
 export interface IVehicleFactory {
