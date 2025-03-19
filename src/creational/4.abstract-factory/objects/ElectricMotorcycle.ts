@@ -1,6 +1,6 @@
 import colors from 'picocolors';
 
-import type { IElectricVehicle } from './IElectricVehicle.js';
+import type { IElectricVehicle } from './abstracts/IElectricVehicle.js';
 
 /** Electric Motorcycle. */
 export class ElectricMotorcycle implements IElectricVehicle {

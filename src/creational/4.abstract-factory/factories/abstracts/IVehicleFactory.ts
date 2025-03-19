@@ -1,5 +1,5 @@
-import type { IElectricVehicle } from '../objects/IElectricVehicle.js';
-import type { IGasolineVehicle } from '../objects/IGasolineVehicle.js';
+import type { IElectricVehicle } from '../../objects/abstracts/IElectricVehicle.js';
+import type { IGasolineVehicle } from '../../objects/abstracts/IGasolineVehicle.js';
 
 /** Vehicle factory interface. */
 export interface IVehicleFactory {

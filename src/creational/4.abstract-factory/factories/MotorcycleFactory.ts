@@ -1,7 +1,7 @@
 import colors from 'picocolors';
 
-import type { IElectricVehicle } from '../objects/IElectricVehicle.js';
-import type { IGasolineVehicle } from '../objects/IGasolineVehicle.js';
+import type { IElectricVehicle } from '../objects/abstracts/IElectricVehicle.js';
+import type { IGasolineVehicle } from '../objects/abstracts/IGasolineVehicle.js';
 import type { IVehicleFactory } from './IVehicleFactory.js';
 
 import { ElectricMotorcycle } from '../objects/ElectricMotorcycle.js';

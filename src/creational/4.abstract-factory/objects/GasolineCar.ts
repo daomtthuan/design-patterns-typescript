@@ -1,6 +1,6 @@
 import colors from 'picocolors';
 
-import type { IGasolineVehicle } from './IGasolineVehicle.js';
+import type { IGasolineVehicle } from './abstracts/IGasolineVehicle.js';
 
 /** Gasoline Car. */
 export class GasolineCar implements IGasolineVehicle {
