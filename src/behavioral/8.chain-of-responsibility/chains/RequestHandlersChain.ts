@@ -17,13 +17,11 @@ export class RequestHandlersChain {
    * @returns Chain.
    */
   public register(handler: RequestHandler): this {
-    if (!this.lastHandler) {
+    if (!this.firstHandler) {
       this.firstHandler = handler;
-      this.lastHandler = handler;
-    } else {
-      this.lastHandler.next = handler;
-      this.lastHandler = handler;
     }
+
+    this.lastHandler = this.lastHandler?.setNext(handler) ?? handler;
 
     return this;
   }
