@@ -8,9 +8,9 @@ import { User } from './objects/User.js';
 const service = new RequestHandlersChain();
 service.register(
   new AuthHandler([
-    new User('user1', 'password1', 'User 1', 'user1@example.com'),
-    new User('user2', 'password2', 'User 2', 'user2@example.com'),
-    new User('user3', 'password3', 'User 3', 'user3@example.com'),
+    new User('user1', 'password1', 'User 1', 'user1@example.com', 'male', new Date('2000-01-01')),
+    new User('user2', 'password2', 'User 2', 'user2@example.com', 'female', new Date('1999-01-01')),
+    new User('user3', 'password3', 'User 3', 'user3@example.com', 'male', new Date('1995-01-01')),
   ]),
 );
 service.register(
