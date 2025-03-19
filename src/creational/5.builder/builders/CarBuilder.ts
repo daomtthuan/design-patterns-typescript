@@ -1,10 +1,12 @@
 import colors from 'picocolors';
 
+import type { ICarBuilder } from './abstracts/ICarBuilder.js';
+
 import { Car } from '../objects/Car.js';
 import { Engine } from '../objects/Engine.js';
 
 /** Car builder. */
-export class CarBuilder {
+export class CarBuilder implements ICarBuilder {
   private carName: string;
   private carEngine: Engine;
 
@@ -46,11 +48,7 @@ export class CarBuilder {
     return this;
   }
 
-  /**
-   * Build the car.
-   *
-   * @returns Car.
-   */
+  /** @inheritdoc */
   public build(): Car {
     return new Car(this.carName, this.carEngine);
   }
