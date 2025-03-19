@@ -1,24 +1,28 @@
 import colors from 'picocolors';
 
-import type { ICarBuilder } from './ICarBuilder.js';
-
 import { Car } from '../objects/Car.js';
 import { Engine } from '../objects/Engine.js';
 
 /** Car builder. */
-export class CarBuilder implements ICarBuilder {
+export class CarBuilder {
   private carName: string;
   private carEngine: Engine;
 
   /** @inheritdoc */
   public constructor() {
     this.carName = 'Unnamed Car';
-    this.carEngine = new Engine(0, 0);
+    this.carEngine = new Engine();
 
     console.log(colors.gray('CarBuilder instance created'));
   }
 
-  /** @inheritdoc */
+  /**
+   * Set car name.
+   *
+   * @param name Car name.
+   *
+   * @returns Car builder.
+   */
   public setName(name: string): this {
     this.carName = name;
 
@@ -27,16 +31,26 @@ export class CarBuilder implements ICarBuilder {
     return this;
   }
 
-  /** @inheritdoc */
-  public setEngine(): this {
-    this.carEngine = new Engine(100, 300);
+  /**
+   * Set car engine.
+   *
+   * @param engine Car engine.
+   *
+   * @returns Car builder.
+   */
+  public setEngine(engine: Engine): this {
+    this.carEngine = engine;
 
     console.log(colors.gray(`Set car engine to`), this.carEngine);
 
     return this;
   }
 
-  /** @inheritdoc */
+  /**
+   * Build the car.
+   *
+   * @returns Car.
+   */
   public build(): Car {
     return new Car(this.carName, this.carEngine);
   }
