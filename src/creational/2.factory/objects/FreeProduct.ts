@@ -1,6 +1,6 @@
 import colors from 'picocolors';
 
-import type { IProduct } from './IProduct.js';
+import type { IProduct } from './abstracts/IProduct.js';
 
 /** Free product. */
 export class FreeProduct implements IProduct {

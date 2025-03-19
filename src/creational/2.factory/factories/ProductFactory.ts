@@ -1,6 +1,6 @@
 import colors from 'picocolors';
 
-import type { IProduct } from '../objects/IProduct.js';
+import type { IProduct } from '../objects/abstracts/IProduct.js';
 
 import { FreeProduct } from '../objects/FreeProduct.js';
 import { PricedProduct } from '../objects/PricedProduct.js';
