@@ -1,13 +1,13 @@
-import type { RequestHandler } from '../handlers/RequestHandler.js';
-import type { Request } from '../objects/Request.js';
+import type { IRequestHandler } from '../handlers/abstracts/IRequestHandler.js';
+import type { IRequest } from '../objects/abstracts/IRequest.js';
 
 /** Request handlers chain. */
 export class RequestHandlersChain {
   /** First Handler. */
-  private firstHandler?: RequestHandler;
+  private firstHandler?: IRequestHandler;
 
   /** Last Handler. */
-  private lastHandler?: RequestHandler;
+  private lastHandler?: IRequestHandler;
 
   /**
    * Register handler.
@@ -16,7 +16,7 @@ export class RequestHandlersChain {
    *
    * @returns Chain.
    */
-  public register(handler: RequestHandler): this {
+  public register(handler: IRequestHandler): this {
     if (!this.firstHandler) {
       this.firstHandler = handler;
     }
@@ -31,7 +31,7 @@ export class RequestHandlersChain {
    *
    * @param request Request.
    */
-  public handle(request: Request): void {
+  public handle(request: IRequest): void {
     console.log('Handle request', request);
 
     this.firstHandler?.handle(request);

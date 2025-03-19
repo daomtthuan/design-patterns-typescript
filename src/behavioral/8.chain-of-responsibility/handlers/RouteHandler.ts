@@ -2,7 +2,7 @@ import colors from 'picocolors';
 
 import type { Request } from '../objects/Request.js';
 
-import { RequestHandler } from './RequestHandler.js';
+import { RequestHandler } from './abstracts/RequestHandler.js';
 
 /** Route handler. */
 export class RouteHandler extends RequestHandler {

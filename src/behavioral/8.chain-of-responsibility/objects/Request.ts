@@ -1,19 +1,15 @@
+import type { IRequest } from './abstracts/IRequest.js';
 import type { User } from './User.js';
 
 /** Request. */
-export class Request {
+export class Request implements IRequest {
   /** User. */
   public user?: User;
 
   /** @inheritdoc */
   public constructor(
-    /** Request URL. */
     public url: string,
-
-    /** Request headers. */
     public headers?: Record<string, string>,
-
-    /** Request data. */
     public body?: string,
   ) {}
 }

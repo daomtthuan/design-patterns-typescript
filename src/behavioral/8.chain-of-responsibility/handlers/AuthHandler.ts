@@ -3,7 +3,7 @@ import colors from 'picocolors';
 import type { Request } from '../objects/Request.js';
 import type { User } from '../objects/User.js';
 
-import { RequestHandler } from './RequestHandler.js';
+import { RequestHandler } from './abstracts/RequestHandler.js';
 
 /** Auth handler. */
 export class AuthHandler extends RequestHandler {
