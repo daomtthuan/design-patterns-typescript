@@ -2,7 +2,7 @@ import colors from 'picocolors';
 
 /** Calculator. */
 export class Calculator {
-  private static instance: Calculator = new Calculator();
+  private static instance?: Calculator;
 
   /** @inheritdoc */
   private constructor() {
@@ -26,6 +26,11 @@ export class Calculator {
 
   /** @returns Calculator instance. */
   public static getInstance(): Calculator {
+    if (!Calculator.instance) {
+      console.log(colors.gray('Calculator creating...'));
+      Calculator.instance = new Calculator();
+    }
+
     return Calculator.instance;
   }
 }

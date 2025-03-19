@@ -2,8 +2,9 @@ import colors from 'picocolors';
 
 /** Store. */
 export class Store {
-  private static instance: Store;
+  private static instance: Store = new Store();
 
+  /** Store values. */
   private values: number[];
 
   /** @inheritdoc */
@@ -23,13 +24,13 @@ export class Store {
     this.values.push(value);
   }
 
+  /** Print store values. */
+  public print(): void {
+    console.log('Store values:', this.values);
+  }
+
   /** @returns Store instance. */
   public static getInstance(): Store {
-    if (!Store.instance) {
-      console.log(colors.gray('Store creating...'));
-      Store.instance = new Store();
-    }
-
     return Store.instance;
   }
 }
