@@ -4,11 +4,12 @@ import type { IProduct } from './IProduct.js';
 
 /** Free product. */
 export class FreeProduct implements IProduct {
+  public price: number;
+
   /** @inheritdoc */
-  public constructor(
-    public name: string,
-    public price: number,
-  ) {
+  public constructor(public name: string) {
+    this.price = 0;
+
     console.log(colors.gray(`FreeProduct ${this.name} instance created`));
   }
 }

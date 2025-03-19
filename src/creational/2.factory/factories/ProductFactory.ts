@@ -24,7 +24,7 @@ export class ProductFactory {
     console.log('Create product with:', { name, price });
 
     if (price === 0) {
-      return new FreeProduct(`[FREE] ${name}`, price);
+      return new FreeProduct(`[FREE] ${name}`);
     } else {
       const product = new PricedProduct(name, price);
 
