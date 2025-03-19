@@ -8,7 +8,7 @@ import { PricedProduct } from '../objects/PricedProduct.js';
 /** Product Factory. */
 export class ProductFactory {
   /** @inheritdoc */
-  private constructor() {
+  public constructor() {
     console.log(colors.gray('ProductFactory instance created'));
   }
 
