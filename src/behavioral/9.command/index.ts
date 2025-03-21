@@ -11,9 +11,11 @@ const playerCommander = new PlayerCommander(player);
 function printGuide(): void {
   console.clear();
   console.log(
-    `${colors.gray('Move:')} ${colors.green('W A S D')}`,
-    `${colors.gray('Attack:')} ${colors.green('ENTER')}`,
-    `${colors.gray('View stamina:')} ${colors.green('SPACE')}`,
+    [
+      `${colors.gray('Move:')} ${colors.green('W A S D')}`,
+      `${colors.gray('Attack:')} ${colors.green('ENTER')}`,
+      `${colors.gray('View stamina:')} ${colors.green('SPACE')}`,
+    ].join(colors.gray('\t')),
   );
   console.log(`${colors.gray('Exit:')} ${colors.green('ESC')}`);
 
