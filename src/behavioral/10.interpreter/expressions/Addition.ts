@@ -2,7 +2,7 @@ import type { ExpressionContext } from '../object/ExpressionContext.js';
 import type { IExpression } from './abstracts/IExpression.js';
 
 /** Addition expression. */
-export class AdditionExpression implements IExpression {
+export class Addition implements IExpression {
   /** Operands. */
   private operands: IExpression[];
 

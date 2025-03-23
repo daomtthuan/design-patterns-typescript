@@ -2,7 +2,7 @@ import type { ExpressionContext } from '../object/ExpressionContext.js';
 import type { IExpression } from './abstracts/IExpression.js';
 
 /** Subtraction expression. */
-export class SubtractionExpression implements IExpression {
+export class Subtraction implements IExpression {
   /** @inheritdoc */
   public constructor(
     /** Left expression. */

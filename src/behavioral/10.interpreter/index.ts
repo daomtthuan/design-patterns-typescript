@@ -1,18 +1,15 @@
 import colors from 'picocolors';
 
-import { AdditionExpression } from './expressions/AdditionExpression.js';
-import { ConstantExpression } from './expressions/ConstantExpression.js';
-import { SubtractionExpression } from './expressions/SubtractionExpression.js';
-import { VariableExpression } from './expressions/VariableExpression.js';
+import { Addition } from './expressions/Addition.js';
+import { Constant } from './expressions/Constant.js';
+import { Subtraction } from './expressions/Subtraction.js';
+import { Variable } from './expressions/Variable.js';
 import { ExpressionContext } from './object/ExpressionContext.js';
 
-const operation = new AdditionExpression(
-  new ConstantExpression(10),
-  new SubtractionExpression(
-    new VariableExpression('c'),
-    new AdditionExpression(new VariableExpression('a'), new VariableExpression('b'), new ConstantExpression(1)),
-  ),
-  new VariableExpression('d'),
+const operation = new Addition(
+  new Constant(10),
+  new Subtraction(new Variable('c'), new Addition(new Variable('a'), new Variable('b'), new Constant(1))),
+  new Variable('d'),
 );
 
 console.log(
@@ -27,10 +24,10 @@ console.log(
     '  d = 3',
     `${colors.gray('Result:')} ${operation.interpret(
       new ExpressionContext([
-        ['a', new ConstantExpression(1)],
-        ['b', new AdditionExpression(new ConstantExpression(2), new VariableExpression('d'))],
-        ['c', new ConstantExpression(4)],
-        ['d', new ConstantExpression(3)],
+        ['a', new Constant(1)],
+        ['b', new Addition(new Constant(2), new Variable('d'))],
+        ['c', new Constant(4)],
+        ['d', new Constant(3)],
       ]),
     )}`,
     '',
@@ -41,10 +38,10 @@ console.log(
     '  d = 1',
     `${colors.gray('Result:')} ${operation.interpret(
       new ExpressionContext([
-        ['a', new ConstantExpression(7)],
-        ['b', new VariableExpression('d')],
-        ['c', new ConstantExpression(0)],
-        ['d', new ConstantExpression(1)],
+        ['a', new Constant(7)],
+        ['b', new Variable('d')],
+        ['c', new Constant(0)],
+        ['d', new Constant(1)],
       ]),
     )}`,
     '',
@@ -55,10 +52,10 @@ console.log(
     '  d = 3',
     `${colors.gray('Result:')} ${operation.interpret(
       new ExpressionContext([
-        ['a', new ConstantExpression(2)],
-        ['b', new ConstantExpression(10)],
-        ['c', new ConstantExpression(6)],
-        ['d', new ConstantExpression(3)],
+        ['a', new Constant(2)],
+        ['b', new Constant(10)],
+        ['c', new Constant(6)],
+        ['d', new Constant(3)],
       ]),
     )}`,
   ].join('\n'),

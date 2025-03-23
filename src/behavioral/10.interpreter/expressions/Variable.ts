@@ -2,7 +2,7 @@ import type { ExpressionContext } from '../object/ExpressionContext.js';
 import type { IExpression } from './abstracts/IExpression.js';
 
 /** Variable expression. */
-export class VariableExpression implements IExpression {
+export class Variable implements IExpression {
   /** @inheritdoc */
   public constructor(
     /** Name. */

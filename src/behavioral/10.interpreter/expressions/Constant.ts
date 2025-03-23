@@ -1,7 +1,7 @@
 import type { IExpression } from './abstracts/IExpression.js';
 
 /** Constant expression. */
-export class ConstantExpression implements IExpression {
+export class Constant implements IExpression {
   /** @inheritdoc */
   public constructor(
     /** Value. */
